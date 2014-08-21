@@ -176,26 +176,26 @@ void count(void){
 
 int main()
 {
-    int ile,i,wartosc;
+    int ile,i,var;
 
-    char komenda[16];
+    char command[16];
 
    scanf("%u ", &ile);
    for(i= 0; i< ile;i++){
-       scanf("%s %u", &komenda, &wartosc);
+       scanf("%s %u", &command, &var);
 
-       if(strcmp(&komenda,"insert")==0){
-           append(wartosc);
-       }else if(strcmp(&komenda,"delete_head")==0){
+       if(strcmp(&command,"insert")==0){
+           append(var);
+       }else if(strcmp(&command,"delete_head")==0){
            delete_head();
-       }else if(strcmp(&komenda,"delete_tail")==0){
+       }else if(strcmp(&command,"delete_tail")==0){
          delete_tail();
-       }else if(strcmp(&komenda,"print")==0){
+       }else if(strcmp(&command,"print")==0){
             show();
-       }else if(strcmp(&komenda,"count")==0){
+       }else if(strcmp(&command,"count")==0){
             count();
-       }else if(strcmp(&komenda,"insert_head")==0){
-            add_new_head(wartosc);
+       }else if(strcmp(&command,"insert_head")==0){
+            add_new_head(var);
        }
        }
 
