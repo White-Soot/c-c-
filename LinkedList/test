@@ -1,0 +1,9 @@
+9
+insert 5
+print
+insert 6
+print
+delete_head
+print
+delete_tail
+print

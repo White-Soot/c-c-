@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1408566764 source:/home/soot/c_corepetition/LinkedList/main.c
+	<stdio.h>
+	<stdlib.h>
+
