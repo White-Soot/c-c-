@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1408638234 source:/home/soot/c_corepetition/c-c-/FIFO/list.c
+	<stdio.h>
+	<stdlib.h>
+

@@ -70,14 +70,14 @@ void append(int val){
 
 void delete_head(void){
 
-
+    struct Node *p_node = malloc(sizeof (struct Node));
 
     if(head!=NULL){
-       struct Node *p_node= head;
 
-       head = head->next;
 
-       free(p_node);
+       p_node->value= (head->next)->value;
+       p_node->next = (head->next)->next;
+       head = p_node;
         return;
     }else{
         printf("0 \n");
@@ -172,32 +172,3 @@ void count(void){
 
 
 
-
-
-int main()
-{
-    int ile,i,var;
-
-    char command[16];
-
-   scanf("%u ", &ile);
-   for(i= 0; i< ile;i++){
-       scanf("%s %u", &command, &var);
-
-       if(strcmp(&command,"insert")==0){
-           append(var);
-       }else if(strcmp(&command,"delete_head")==0){
-           delete_head();
-       }else if(strcmp(&command,"delete_tail")==0){
-         delete_tail();
-       }else if(strcmp(&command,"print")==0){
-            show();
-       }else if(strcmp(&command,"count")==0){
-            count();
-       }else if(strcmp(&command,"insert_head")==0){
-            add_new_head(var);
-       }
-       }
-
-    return 0;
-}

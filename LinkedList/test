@@ -1,6 +1,8 @@
 9
 insert 5
 print
+delete_tail
+print
 insert 6
 print
 delete_head
